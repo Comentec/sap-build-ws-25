@@ -1,25 +1,12 @@
-# Getting Started
+# Building SuccessFactors Extensions with SAP Build (SAP Build Discovery Days)
 
-Welcome to your new project.
+## Description
+This repository contains the material for the "Building SuccessFactors Extensions with SAP Build" workshop, brought to you by Comentec in collaboration with SAP.
 
-It contains these folders and files, following our recommended project layout:
+## Overview
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+## Session prerequisites
 
+In order to get the most from this workshop, and to be able to work through the exercises, there are certain prerequisites that you must have sorted out before we start the workshop.
 
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+The prerequisites are detailed in a separate [prerequisites](prerequisites.md) file. Please ensure you have everything ready before attending the CodeJam.
