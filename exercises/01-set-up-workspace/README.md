@@ -1,45 +1,47 @@
-# Exercise 01 - Set up your workspace
-At the end of this exercise, you'll have an environment in which to work for the duration of this workshop. For this exercise, we will start from scratch so we can eliminate the need for pre-existing knowledge of SuccessFactors and SAP Build.
-## Set up the environment
-For this workshop, we will be using an SAP Build subscription dedicated for this workshop. This environment will be available to you during the workshop and some time after so you can revisit what you have built.
+# Exercise 01 - Set Up Your Workspace
 
-Anytime, you can replicate the same examples in your own environment as well.
+In this exercise, you'll set up your SAP Build workspace. No prior knowledge of SuccessFactors or SAP Build required.
 
-Log on to SAP Build with the credentials provided to you by the instructor of the workshop.
-- URL to access the SAP Build subscription
+## Log In to SAP Build
+
+Use the credentials provided by your instructor:
+- SAP Build subscription URL
 - Username and password
 
-### Create your project
-In the projects area, create a new project. Choose the create option from the drop-down.
+You can replicate these exercises in your own environment anytime after the workshop.
 
-![Create your project](assets/create_project.png)
+## Create Your Project
 
-1. Objective: Application
-1. Category: Full-Stack
-1. Type: Full-Stack Node.JS
-1. Project Details
-    - Name: feedback_<username>
-    - Description: Employee feedback application
-    - Dev Space: Full_Stack
-1. Review and create.
+1. In the projects area, click **Create** from the dropdown
 
-The status will show pending creation and after a minute or two will be ready.
+   ![Create your project](assets/create_project.png)
 
-### Go to Dev Space
+2. Configure your project:
+   - **Objective:** Application
+   - **Category:** Full-Stack
+   - **Type:** Full-Stack Node.JS
+   - **Project Details:**
+     - **Name:** `feedback_<username>`
+     - **Description:** Employee feedback application
+     - **Dev Space:** Full_Stack
 
-Once the project has been generated, you can click on its hyperlink and it will take you to the project environment within the Dev Space.
+3. Click **Review and Create**
 
-By default, the project Storyboard will open, showing you external resources, data models, services, and UI applications.
+The project status will show "pending" for a minute or two, then change to "ready."
 
-## Check the installation of the CDS development kit
+## Open Your Dev Space
 
-👉 Inside your dev container or your Dev Space, open a terminal, using "Terminal: Create New Terminal" in the Command Palette, and at the prompt, check the version:
+Click the project hyperlink to open it in your Dev Space. The project Storyboard opens by default, showing external resources, data models, services, and UI applications.
 
-```
+## Verify CDS Installation
+
+Open a terminal (**Terminal** → **Create New Terminal** or use the Command Palette):
+
+```bash
 cds v
 ```
 
-You should see that the CDS development kit is installed. Depending on your workspace, you'll see slightly different output, but it should generally look something like this:
+You should see output similar to this:
 
 ```
 @sap/cds: 9.4.4
@@ -56,36 +58,45 @@ You should see that the CDS development kit is installed. Depending on your work
 Node.js: v22.13.1
 home: /home/user/projects/feedback_model/node_modules/@sap/cds
 ```
-> The CDS development kit is installed as part of any "Full Stack Cloud Application" type of Dev Space in the SAP Business Application Studio.
+
+> **Note:** The CDS development kit is pre-installed in "Full Stack Cloud Application" Dev Spaces in SAP Business Application Studio.
 
 ## Summary
-At this point you've got an environment in which to work through the rest of the exercises in this workshop, and you have the CDS development kit installed and ready to use.
 
-## (Optional) Connect to SAP Business Application Studio remotely
+Your environment is ready! You have:
+- ✅ An SAP Build workspace
+- ✅ A Full-Stack Node.js project
+- ✅ CDS development kit installed
 
-1. In your local VSCode application, install extension [SAP Business Application Studio toolkit](https://marketplace.visualstudio.com/items?itemName=SAPOSS.app-studio-toolkit).
-1. Enter the URL of the Business Application Studioe. It looks like https://...applicationstudio.cloud.sap
-1. This URL will register the BAS in your extension.
-1. Click on the login button to the right of your landscape entry.
-1. The browser will open and log you into the environment.
-1. The extension is now ready to be used. Click on the `open in new window` button to the your landscape entry.
-1. This will open new window connected to the Dev Space.
-1. Then open the project folder -> /home/user/project/feedback...
-1. Now you can run it locally connected to the Dev Space container.
+---
 
-## (Optional) Add Remote Repository
+## Optional: Connect to BAS Remotely
 
-Create new empty repository in your own versioning environment.
+Work on your BAS project from your local VS Code:
 
-- Name: sap_build_ws_feedback
-- Make sure it is empty, so don’t add anything to it, like README.
+1. Install the [SAP Business Application Studio toolkit](https://marketplace.visualstudio.com/items?itemName=SAPOSS.app-studio-toolkit) extension in VS Code
+2. Enter your BAS URL (format: `https://...applicationstudio.cloud.sap`)
+3. Click the **Login** button next to your landscape entry
+4. Authenticate in the browser when prompted
+5. Click **Open in New Window** next to your landscape entry
+6. Open the project folder: `/home/user/project/feedback_<username>`
 
-Then take the url (e.g. https://github.com/frankmeertens/sap_build_ws_feedback.
+You're now connected to your Dev Space from local VS Code.
 
-On the left sidebar, click on the Simple Git extension and here we can add the remote repository.
+## Optional: Add Remote Repository
 
-Note: When you store the credentials for the remote Git repository, they will be stored in /home/user/.git-credentials.
+If you want to use your own Git repository:
 
-The Simple Git extension will automatically commit and sync the changes.
+1. Create a new empty repository (e.g., on GitHub):
+   - **Name:** `sap_build_ws_feedback`
+   - Don't add README or other files
 
-Open the terminal panel (ctrl+`) and the GitLens extension will show the first commit that was completed.
+2. Copy the repository URL (e.g., `https://github.com/username/sap_build_ws_feedback`)
+
+3. In BAS, open the **Simple Git** extension (left sidebar)
+
+4. Add the remote repository URL
+
+5. Enter your Git credentials when prompted (stored in `/home/user/.git-credentials`)
+
+The Simple Git extension will automatically commit and sync changes. Check the terminal panel (Ctrl+`) to see commits via the GitLens extension.
