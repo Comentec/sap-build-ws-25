@@ -1,0 +1,29 @@
+### Get all employees
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal
+
+###
+
+### Get a specific employee (Michael Scott)
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal(personIdExternal='1001',startDate=2005-03-24)
+
+###
+
+### Filter by first name
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal?$filter=contains(firstName,'Jim')
+
+###
+
+### Select specific fields
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal?$select=displayName,firstName,lastName
+
+###
+
+### Get all employees with count
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal?$count=true
+
+###
+
+### Order by last name
+GET http://localhost:4005/odata/v4/personal-information/PerPersonal?$orderby=lastName
+
+###
