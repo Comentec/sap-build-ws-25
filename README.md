@@ -21,16 +21,6 @@ During this workshop, you'll follow this high-level development flow:
 
 This approach demonstrates enterprise-grade architecture patterns while remaining accessible to developers new to SAP BTP.
 
-## Why External Services First?
-
-This workshop adopts an **external-first approach** that mirrors real-world HR development:
-
-**Real-World Context**: Most HR projects extend existing SuccessFactors systems rather than starting from scratch. Beginning with external services immediately demonstrates SAP Build Code's integration strengths—often the primary reason for choosing SAP BTP.
-
-**Natural Learning Flow**: Starting with complex SuccessFactors metadata naturally leads to questions like "How do I simplify this for my use case?" and "How do I develop locally?" This creates authentic challenges that make mocking, projections, and local modeling feel necessary rather than academic.
-
-**Production Architecture**: This approach mirrors how enterprise HR applications actually work—external HR systems as the source of truth, with local extensions adding business value through a proper integration layer.
-
 ## Target Audience
 
 This workshop is designed for technical developers from SAP customer organizations who are:
