@@ -55,13 +55,13 @@ These are the exercises, each in their own directory, sometimes with supporting 
 
 The instructor will guide you through each exercise. If you finish before others, there are additional questions and optional sections to explore. Please wait for the instructor before proceeding to the next exercise.
 
-> The exercises are written to provide both hands-on instructions and contextual background. Look for 👉 pointers throughout that indicate specific actions to take, as opposed to background information to read.
-
 1. [Set Up Your Workspace](exercises/01-set-up-workspace/README.md) - Create your SAP Build Code project and verify your development environment
 2. [Import External Service Definition](exercises/02-import-external-service/README.md) - Connect to SuccessFactors Personal Information API via SAP Business Accelerator Hub
-3. [Mock External Service](exercises/03-mock-external-service/README.md) - Set up local development with realistic HR test data
-
-...(add as exercises are completed)
+3. [Introduce Mock Service](exercises/03-introducing-mock-service/README.md) - Set up local development with realistic HR test data
+4. [Create Local Data Model](exercises/04-create-local-data-model/README.md) - Build your feedback application's data entities and relationships
+5. [Build Service Layer](exercises/05-build-service-layer/README.md) - Expose your data model through OData services
+6. [Create User Interface](exercises/06-create-user-interface/README.md) - Generate a Fiori Elements form for feedback creation
+7. [Enhance User Interface](exercises/07-enhance-user-interface/README.md) - Improve the UI with professional layouts, labels, and branding
 
 ## Feedback
 
