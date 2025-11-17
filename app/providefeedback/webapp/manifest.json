@@ -100,8 +100,8 @@
               "contextPath": "/Feedbacks",
               "content": {
                 "header": {
-                  "visible": false,
-                  "anchorBarVisible": false
+                  "visible": true,
+                  "anchorBarVisible": true
                 }
               }
             }
