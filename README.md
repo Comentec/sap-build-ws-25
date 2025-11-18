@@ -62,6 +62,7 @@ The instructor will guide you through each exercise. If you finish before others
 5. [Build Service Layer](exercises/05-build-service-layer/README.md) - Expose your data model through OData services
 6. [Create User Interface](exercises/06-create-user-interface/README.md) - Generate a Fiori Elements form for feedback creation
 7. [Enhance User Interface](exercises/07-enhance-user-interface/README.md) - Improve the UI with professional layouts, labels, and branding
+8. [Add Authentication](exercises/08-add-authentication/README.md) - Implement user authentication and automatic user tracking
 
 ## Feedback
 
