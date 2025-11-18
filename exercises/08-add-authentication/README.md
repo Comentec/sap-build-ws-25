@@ -246,7 +246,7 @@ CAP provides default mock users for testing:
 Check that the managed aspect is working by viewing the created record:
 
 1. **Open a new browser tab**
-2. **Navigate to** `http://localhost:4004/odata/v4/main-service/Feedbacks`
+2. **Navigate to** `http://localhost:4004/odata/v4/main/Feedbacks`
 3. **Look for the managed fields** in the JSON response - you should see `createdBy` and `modifiedBy` both showing "alice", along with `createdAt` and `modifiedAt` timestamps
 
 ## Summary
